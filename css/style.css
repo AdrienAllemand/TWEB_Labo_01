@@ -1,0 +1,199 @@
+body{
+
+  background-color: #FE9993;
+}
+.body-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
+.account-info {
+  background-color: white;
+  
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 450px;
+  height: 220px;
+
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  font-family: 'Roboto', sans-serif;
+}
+.leftie {
+
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 170px;
+  height: auto;
+}
+
+.rightie {
+
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-left:20px;
+  width: auto;
+  height: auto;
+
+  text-align: left;
+}
+
+
+.profile-pic {
+  height: 150px;
+  width: 150px;
+
+  border-radius: 15px;
+  border: 1px solid #888;
+}
+
+.follow-button{
+  height: 40px;
+  width: 150px;
+
+  border-radius: 15px;
+  border:none;
+
+  color:white;
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #71BD82;
+}
+
+.profile-title {
+  font-size: 1.5em;
+}
+
+
+.profile-subtitle {
+  font-size: 1.2em;
+}
+
+.profile-text{
+  font-size:1em;
+  color:gray;
+  text-align: justify;
+}
+
+.profile-footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* article widget */
+.post {
+  background-color: white;
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 350px;
+  height: auto;
+
+  text-align: center;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.post-header {
+  font-size: 1.2em;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post-pseudo {
+  text-align:left;
+}
+
+.post-date {
+  text-align:right;
+  font-size:0.8em;
+  color: gray;
+}
+
+.post-article.-expanded{
+    max-height: 100vh;
+}
+
+.post-article {
+  text-align: justify;
+
+  position: relative;
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 1s ease;
+  padding-bottom: 20px;
+}
+
+/*
+fading magic braught to you by 
+https://codepen.io/valerie-roske/pen/MyZoGx
+*/
+.post-article:not(.-expanded)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+
+}
+
+.expand-button {
+  width:auto;
+  cursor: pointer;
+  margin:none;
+  border:none;
+  background-color: white;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.expand-button:hover{
+  color:darkgray;
+}
+.expand-button:active{
+  color:darkgray;
+}
+.expand-button:focus{
+  color:darkgray;
+}
+
+.post-footer {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post-social{
+  width:40%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
